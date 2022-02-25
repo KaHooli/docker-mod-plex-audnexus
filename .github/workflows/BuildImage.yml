@@ -3,7 +3,7 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "kahooli/plex-phoenixadult"
+  ENDPOINT: "kahooli/plex-audnexus"
   BRANCH: "main"
 
 jobs:
