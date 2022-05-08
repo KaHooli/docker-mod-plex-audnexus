@@ -13,7 +13,7 @@ if [ ! -d "$plugindir/Audnexus.bundle" ]; then
     git clone https://github.com/djdembeck/Audnexus.bundle "$plugindir/Audnexus.bundle"
 else
     echo "**** Audnex.us client: pulling latest update ****"
-    git config --global --add safe.directory '$plugindir/Audnexus.bundle'
+    git config --global --add safe.directory '/config/Library/Application Support/Plex Media Server/Plug-ins/Audnexus.bundle'
     git -C "$plugindir/Audnexus.bundle" pull
 fi
 chown -R abc:abc "$plugindir/Audnexus.bundle"
