@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+# install git if needed
+if [ -z `command -v git` ]; then
+    echo "**** installing git ****"
+    apt-get install --no-install-recommends -y git
+fi
