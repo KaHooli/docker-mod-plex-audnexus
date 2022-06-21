@@ -1,11 +1,5 @@
 #!/usr/bin/with-contenv bash 
 
-# install git if needed
-if [ -z `command -v git` ]; then
-    echo "**** Audnex.us client: installing git ****"
-    apt-get install --no-install-recommends -y git
-fi
-
 # clone or update Audnexus.bundle repo
 plugindir="/config/Library/Application Support/Plex Media Server/Plug-ins"
 if [ ! -d "$plugindir/Audnexus.bundle" ]; then
